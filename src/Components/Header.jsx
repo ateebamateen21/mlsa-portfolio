@@ -4,9 +4,19 @@
  * Top navigation bar for your site. Set to remain visible as the
  * user scrolls so that they can constantly reach any part of your page.
  */
-import React from "react";
+import React, { useRef } from "react";
 
 const Header = () => {
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const portfolioRef = useRef(null);
+  const footerRef = useRef(null);
+
+  const scrollToSection = (ref) => {
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div
       style={{
@@ -21,10 +31,18 @@ const Header = () => {
         zIndex: 10,
       }}
     >
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#footer">Contact</a>
+      <a href="#home" onClick={() => scrollToSection(homeRef)}>
+        Home
+      </a>
+      <a href="#about" onClick={() => scrollToSection(aboutRef)}>
+        About
+      </a>
+      <a href="#portfolio" onClick={() => scrollToSection(portfolioRef)}>
+        Portfolio
+      </a>
+      <a href="#footer" onClick={() => scrollToSection(footerRef)}>
+        Contact
+      </a>
     </div>
   );
 };
