@@ -19,6 +19,7 @@ const Header = () => {
   };
   return (
     <div
+      className="px-4"
       style={{
         position: "fixed",
         display: "flex",

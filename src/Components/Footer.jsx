@@ -38,6 +38,7 @@ const Footer = (props) => {
       }}
     >
       <div
+        className="px-4"
         style={{
           display: "flex",
           justifyContent: "center",

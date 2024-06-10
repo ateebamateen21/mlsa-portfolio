@@ -14,19 +14,11 @@ const detailOrQuote =
 
 const About = () => {
   return (
-    <section className="padding" id="about">
+    <section className="padding px-4" id="about">
       <img className="background" src={image} alt={imageAltText} />
-      <div
-        style={{
-          backgroundColor: "white",
-          width: "50%",
-          padding: "4rem",
-          margin: "3rem auto",
-          textAlign: "center",
-        }}
-      >
-        <h2>About Myself</h2>
-        <p className="large">{description}</p>
+      <div className="bg-white w-full md:w-2/3 mx-auto">
+        <h2 className="text-center pb-3">About Myself</h2>
+        <p className="large px-4 text-justify">{description}</p>
         <hr />
         <ul
           style={{
@@ -42,7 +34,7 @@ const About = () => {
           ))}
         </ul>
         <hr />
-        <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+        <p className="py-4 text-center">{detailOrQuote}</p>
       </div>
     </section>
   );
