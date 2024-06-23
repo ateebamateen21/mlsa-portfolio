@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Educator JS Codespace Template",
   "source": "src/index.html",
-  "homepage": "https://github.com/microsoft/codespaces-teaching-template-js#readme",
+  "homepage": "https://ateebamateen21.github.io/mlsa-portfolio",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "build-gh": "parcel build --public-url 'https://{github-username}.github.io/{repo-name}'",
+    "build-gh": "parcel build --public-url 'https://ateebamateen21.github.io/mlsa-portfolio'",
     "predeploy": "npm run build-gh",
     "deploy": "gh-pages -d dist"
   },
@@ -35,7 +35,7 @@
     "eslint-plugin-react": "^7.31.7",
     "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
-    "parcel": "^2.7.0",
+    "parcel": "^2.12.0",
     "postcss": "^8.4.38",
     "prettier": "^2.7.1",
     "process": "^0.11.10",
